@@ -3,9 +3,14 @@
 
 {% block content %}
 
-    <div class="single_content">
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.get_content }}</p>
-    </div>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{{post.link }}"><h1>{{ post.title }}</h1></a>
+                <br />
+            </li>
+        {% endfor %}
+
+    </ul>
 
 {% endblock %}

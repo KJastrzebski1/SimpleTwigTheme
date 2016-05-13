@@ -1,5 +1,5 @@
 <?php get_header();
 
-Timber::render("single.twig");
+Timber::render("base.twig");
 
  get_footer();

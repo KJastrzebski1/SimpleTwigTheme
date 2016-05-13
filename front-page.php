@@ -7,7 +7,7 @@ $context = array();
 $var = "Message from background";
 
 $context['message'] = $var;
-$context['post'] = Timber::get_post(2);
+$context['posts'] = Timber::get_posts();
 
 Timber::render("front-page.twig", $context);
 

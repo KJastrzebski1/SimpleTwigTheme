@@ -5,6 +5,8 @@
 {% block content %}
     <div class="single_content">
         <h1>{{ post.title }}</h1>
+        <img src="{{ post.thumbnail }}">
+        <p>Published on {{ post.date('F jS') }} by <a href="{{post.author.link}}">{{post.author.name }}</a></p>
         <p>{{ post.get_content }}</p>
     </div>
 {% endblock %}
