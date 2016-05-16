@@ -1,7 +1,7 @@
 /*
-Theme Name: 
+Theme Name: Twig
 Theme URI: 
-Author: 
+Author: Kalvot
 Author URI: 
 Description: 
 License: GNU General Public License v2 or later
@@ -10,3 +10,59 @@ Tags:
 Text Domain: 
 
 */
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#528036+0,9bc454+50,528036+100 */
+    background: rgb(82,128,54); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(82,128,54,1) 0%, rgba(155,196,84,1) 50%, rgba(82,128,54,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(82,128,54,1) 0%,rgba(155,196,84,1) 50%,rgba(82,128,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(82,128,54,1) 0%,rgba(155,196,84,1) 50%,rgba(82,128,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#528036', endColorstr='#528036',GradientType=1 ); /* IE6-9 */
+
+}
+.slide-base{
+    height: 400px;
+    width: 100%;
+    background-color: #B8D762;
+}
+
+.content-wrapper{
+    position: relative;
+    top: -50px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.row{
+    padding: 30px;
+}
+
+h1{
+    text-transform: capitalize;
+    color: #468107;
+}
+.page span{
+    color: #E77500;
+    font-style: italic;
+    font-weight: 600;
+}
+.page ul{
+    list-style: none;
+    color: #4A8F00;
+    font-weight: 600;
+}
+.page li:before{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    font-weight: 100;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #4A8F00;
+}

@@ -1,0 +1,13 @@
+{# empty Twig template #}
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            {% for item in top_menu.get_items %}
+                <li class="nav-main-item {{ item.classes | join(' ') }}">
+                    <a class="nav-main-link" href="{{ item.get_link }}">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
