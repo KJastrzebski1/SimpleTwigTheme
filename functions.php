@@ -31,7 +31,7 @@ function theme_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
 function add_to_context( $data ) {
-	$data['logo'] = new TimberImage( 'wp-content/uploads/2016/05/logo.png' );
+	$data['logo'] = new TimberImage( get_template_directory_uri().'/assets/img/logo.png' );
 	$data['top_menu'] = new TimberMenu( 'top-menu' );
 	return $data;
 }
