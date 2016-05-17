@@ -2,7 +2,6 @@
 
 
 $context = Timber::get_context();
-
 $var = "Message from background";
 
 $context['message'] = $var;

@@ -49,6 +49,10 @@ nav{
     margin: 15px;
     margin-left: 130px;
 }
+.navbar-nav li.active a {
+    background: white;
+    color: #4A8F00;
+}
 .navbar-nav li a{
     font-family: Museo-500;
     font-size: 22px;
