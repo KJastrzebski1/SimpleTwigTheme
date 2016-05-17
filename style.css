@@ -1,7 +1,7 @@
 /*
-Theme Name: 
+Theme Name: Twig
 Theme URI: 
-Author: 
+Author: Kalvot
 Author URI: 
 Description: 
 License: GNU General Public License v2 or later
@@ -10,3 +10,121 @@ Tags:
 Text Domain: 
 
 */
+@font-face {
+  font-family: Museo-500;
+  src: url('assets/fonts/Museo500-Regular.otf');
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#528036+0,9bc454+50,528036+100 */
+    background: rgb(82,128,54); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(82,128,54,1) 0%, rgba(155,196,84,1) 50%, rgba(82,128,54,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(82,128,54,1) 0%,rgba(155,196,84,1) 50%,rgba(82,128,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(82,128,54,1) 0%,rgba(155,196,84,1) 50%,rgba(82,128,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#528036', endColorstr='#528036',GradientType=1 ); /* IE6-9 */
+    font-family: Museo-500;
+}
+nav{
+    background-image: url('assets/img/menu-bg.png');
+    background-size: cover;
+    height: 110px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px black;
+    z-index: 10;
+}
+.container-fluid > .navbar-collapse, 
+.container-fluid > .navbar-header, 
+.container > .navbar-collapse, 
+.container > .navbar-header{
+    margin-top: 0px;
+    margin-left: 20px;
+    
+    
+}
+.navbar-nav{
+    margin: 15px;
+    margin-left: 130px;
+}
+.navbar-nav li a{
+    font-family: Museo-500;
+    font-size: 22px;
+    color: #585858;
+    height: 60px;
+    width: 120px;
+    padding: 20px 0;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+.navbar-nav li:hover a{
+    color: #4A8F00;
+}
+.slide-base{
+    position: relative;
+    top: -50px;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    margin-bottom: -100px;
+    background-color: #B8D762;
+    box-shadow: 0px 0px 10px black;
+}
+.slide-base img{
+    width: 100%;
+    position: relative;
+    right: 0px;
+    bottom: -50px;
+}
+
+.content-wrapper{
+    position: relative;
+    background-color: white;
+    margin-bottom: -50px;
+    box-shadow: 0px 0px 5px black;
+    z-index: 10;
+}
+
+.row{
+    padding: 30px;
+}
+
+h1{
+    font-family: Museo-500;
+    text-transform: capitalize;
+    color: #468107;
+}
+.col-md-4 span{
+    font-family: Museo-500;
+    color: #E77500;
+    font-style: italic;
+    font-weight: 600;
+}
+.col-md-4 ul{
+    list-style: none;
+    color: #4A8F00;
+    font-weight: 600;
+}
+.col-md-4 li:before{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    font-weight: 100;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #4A8F00;
+}
+
+.btn{
+    background-image: url('assets/img/button.png');
+    background-size: cover;
+    height: 28px;
+    width: 105px;
+    color: #585858;
+}

@@ -1,0 +1,16 @@
+{# empty Twig template #}
+
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="hdr-logo-link" href="{{site.siteurl}}" rel="home"><img src="{{ logo |resize(220) }}"></a>
+        </div>
+        <ul class="nav navbar-nav">
+            {% for item in top_menu.get_items %}
+                <li class="nav-main-item {{ item.classes | join(' ') }}">
+                    <a class="nav-main-link" href="{{ item.get_link }}">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

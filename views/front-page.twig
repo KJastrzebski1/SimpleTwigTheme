@@ -2,6 +2,7 @@
 {% extends "base.twig" %}
 
 {% block content %}
+<<<<<<< HEAD
 
     <ul>
         {% for post in posts %}
@@ -13,4 +14,28 @@
 
     </ul>
 
+=======
+    <div class="row">
+        <div class="col-md-4">
+            <h1>{{about_us.title}}</h1>
+            <img src="{{about_us.thumbnail.src}}">
+            <p>{{about_us.content}}</p>
+            <a class="btn" href="{{ about_us.link }}">Read More</a>
+        </div>
+        <div class="col-md-4">
+            <h1>{{our_service.title}}</h1>
+            <p>{{our_service.content}}</p>
+            <a class="btn" href="{{ our_service.link }}">Read More</a>
+        </div>
+        <div class="col-md-4">
+            <h1>Latest news</h1>
+            {% for post in posts %}
+                <div class="single_content">
+                    <span>{{ post.title }}</span>
+                    <p>{{ post.get_preview(20) }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+>>>>>>> a22a0d37391f5f52b8983c2fca319b929c11322e
 {% endblock %}

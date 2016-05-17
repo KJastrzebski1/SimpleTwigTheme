@@ -1,28 +1,56 @@
-{# empty Twig template #}
-{# Base Template: base.twig #}
- 
 {% block html_head_container %}
- 
+
     {% include 'header.twig' %}
- 
+    {% block head %}
+    {% endblock %}
+</head>
 {% endblock %}
- 
-    <body class="{{body_class}}">
- 
-        <div class="wrapper">
- 
-            {% block content %}
- 
-                <!-- Add your main content here. -->
-                <p>SORRY! No content found!</p>
- 
+
+<body class="{{body_class}}" data-template="base.twig">
+    <div class="container">
+        <header class="header" >
+            {% block header %}
+                <div class="wrapper">
+                    {% include "menu.twig" %}
+                </div>
             {% endblock %}
- 
+        </header>
+    </div>
+    <div class="slide-base">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>{{ top_post.title }}</h1>
+                    <p>{{ top_post.content }}</p>
+                    <a class="btn" href="{{ top_post.link }}">Get Started</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{top_post.thumbnail.src}}">
+                </div>
+            </div>
         </div>
-        <!-- /.wrapper -->
- 
-    {% include "footer.twig" %}
- 
-    </body>
- 
+    </div>
+    <div class="container">
+        <section id="content" role="main" class="content-wrapper">
+            <div class="wrapper {{sidebar_class}}">
+                {% block content %}
+                    Sorry, no content
+                {% endblock %}
+            </div>
+            {% if sidebar %}
+                <aside class="layout-sidebar">
+                    {{sidebar}}
+                </aside>
+            {% endif %}
+
+        </section>
+
+        {% block footer %}
+            <footer id="footer">
+                {% include 'footer.twig' %}
+            </footer>
+            {{ function('wp_footer') }}
+        {% endblock %}
+    </div>
+</body>
 </html>
