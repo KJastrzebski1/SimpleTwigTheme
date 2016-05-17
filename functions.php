@@ -6,17 +6,11 @@
  * and open the template in the editor.
  */
 
-<<<<<<< HEAD
+
 function theme_init(){
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'theme_init');
-=======
-function theme_init() {
-	add_theme_support( 'post-thumbnails' );
-}
-
-add_action( "after_setup_theme", 'theme_init' );
 
 function register_my_menus() {
 	register_nav_menus(
@@ -45,4 +39,3 @@ function add_to_context( $data ) {
 
 add_filter( 'timber_context', 'add_to_context' );
 add_action( 'init', 'register_my_menus' );
->>>>>>> a22a0d37391f5f52b8983c2fca319b929c11322e
