@@ -32,6 +32,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
 function add_to_context( $data ) {
 	$data['logo'] = new TimberImage( get_template_directory_uri().'/assets/img/logo.png' );
+	$data['top_post'] = Timber::get_post(30);
 	$data['top_menu'] = new TimberMenu( 'top-menu' );
 	return $data;
 }

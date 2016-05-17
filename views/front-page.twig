@@ -3,18 +3,18 @@
 
 {% block content %}
     <div class="row">
-        <div class="col-md-4 page">
+        <div class="col-md-4">
             <h1>{{about_us.title}}</h1>
             <img src="{{about_us.thumbnail.src}}">
             <p>{{about_us.content}}</p>
             <a class="btn" href="{{ about_us.link }}">Read More</a>
         </div>
-        <div class="col-md-4 page ">
+        <div class="col-md-4">
             <h1>{{our_service.title}}</h1>
             <p>{{our_service.content}}</p>
             <a class="btn" href="{{ our_service.link }}">Read More</a>
         </div>
-        <div class="col-md-4 page">
+        <div class="col-md-4">
             <h1>Latest news</h1>
             {% for post in posts %}
                 <div class="single_content">

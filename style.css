@@ -34,6 +34,7 @@ nav{
     height: 110px;
     padding: 10px 20px;
     box-shadow: 0px 0px 5px black;
+    z-index: 10;
 }
 .container-fluid > .navbar-collapse, 
 .container-fluid > .navbar-header, 
@@ -66,19 +67,26 @@ nav{
 .slide-base{
     position: relative;
     top: -50px;
-    z-index: -1;
+    z-index: 1;
     height: 400px;
     width: 100%;
+    margin-bottom: -100px;
     background-color: #B8D762;
     box-shadow: 0px 0px 10px black;
+}
+.slide-base img{
+    width: 100%;
+    position: relative;
+    right: 0px;
+    bottom: -50px;
 }
 
 .content-wrapper{
     position: relative;
-    top: -100px;
     background-color: white;
     margin-bottom: -50px;
     box-shadow: 0px 0px 5px black;
+    z-index: 10;
 }
 
 .row{

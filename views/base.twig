@@ -17,20 +17,21 @@
         </header>
     </div>
     <div class="slide-base">
-        <div class="row container" style="margin: 0 auto;">
-            <div class="col-md-6">
-                <h1>{{ top_post.title }}</h1>
-                <p>{{ top_post.content }}</p>
-                <a class="btn" href="{{ top_post.link }}">Read More</a>
-            </div>
-            <div class="col-md-6">
-                <img src="{{top_post.thumbnail.src}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>{{ top_post.title }}</h1>
+                    <p>{{ top_post.content }}</p>
+                    <a class="btn" href="{{ top_post.link }}">Get Started</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{top_post.thumbnail.src}}">
+                </div>
             </div>
         </div>
     </div>
     <div class="container">
         <section id="content" role="main" class="content-wrapper">
-            {% if title %}<h1>{{title}}</h1>{% endif %}
             <div class="wrapper {{sidebar_class}}">
                 {% block content %}
                     Sorry, no content
